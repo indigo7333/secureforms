@@ -22,14 +22,9 @@ class Form {
     }                            
 
     private function Token() {
-      
-      $salt = crc32($this->name);
-      
-    	$token = hash("sha256", openssl_random_pseudo_bytes(microtime()).HASH_SPECIAL_SALT.microtime().$this->salt);  
-      
-    
-      $_SESSION[$this->name.'_token'] = $token; 
-    	
+		$token = hash("sha256", openssl_random_pseudo_bytes(intval(microtime()).HASH_SPECIAL_SALT.$this->salt));   
+		$_SESSION[$this->name.'_token'] = $token; 
+
     	return $token;
 
     }
