@@ -1,6 +1,6 @@
 <?php
 namespace indigo7;
-class Esve {
+class ESVE {
     
     var $field_name;
     var $value;
