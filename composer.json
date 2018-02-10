@@ -1,0 +1,20 @@
+{
+    "name": "indigo7333/secureforms",
+    "description": "Secure and validate your php forms",
+    "homepage": "http://greenit.us",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emil Palimski",
+            "email": "indigo7333@gmail.com",
+            "homepage": "https://greenit.us",
+            "role": "Original Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "autoload": {
+        "files": [ "secureforms/esve.php", "secureforms/esve_exception.php", "secureforms/form.php", "secureforms/form_exception.php"]
+    }
+}
